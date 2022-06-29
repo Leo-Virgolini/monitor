@@ -76,12 +76,7 @@ public class MaquinaService extends ScheduledService<Object[]> {
         @Override
         protected Object[] call() {
             if (!groupCode.equals("SECTOR")) { //eficiencias por maquina del grupo
-                Object[] results = new Object[2];
-                Object[] eficienciasGrupo = MaquinaDAO.obtenerEficienciasPorGrupo(this.groupCode);
-                results[0] = eficienciasGrupo[0]; // maquinas
-                results[1] = eficienciasGrupo[1]; // eficiencia de grupo
-
-                return results;
+                return MaquinaDAO.obtenerEficienciasPorGrupo(this.groupCode);
             } else { // eficiencias por grupo del sector
                 Object[] results = new Object[2];
                 Object[] eficienciasSector = MaquinaDAO.obtenerEficienciasPorSector(this.groupName);
