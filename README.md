@@ -2,7 +2,7 @@
  Interfaz gráfica que muestra por pantalla las eficiencias de las máquinas de tejer en tiempo real del sistema Nautilus obtenidos de una vista de una base de datos.
  Hecho con JavaFX. BD en MySQL.
  
- ![Monitor](https://user-images.githubusercontent.com/27713010/177005698-b3ab15ac-0533-4062-8c99-e9be6be57233.png)
+ ![Monitor](https://user-images.githubusercontent.com/27713010/177019806-da26f0f9-36f3-440d-b057-a0562edbc93c.png)
 
  -javafx-maven-plugin-> Compilar y ejecutar-> mvn clean javafx:run
  
